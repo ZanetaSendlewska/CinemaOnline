@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kino online</title>
+    <link rel="stylesheet" href="projekt2.css">
+    <meta name="description" content="Kino online" />
+    <meta name="author" content="Nazwa Firmy, Miejscowość" />
+    <meta name="keywords" content="kino, online, film," />
+    <meta name="robots" content="none" />
+</head>
+
+<body>
+
+    <div class="flexbox-container">
+        <div class="cinema">
+            <a href="projekt2.html">Kino online </a>
+        </div>
+        <div class="logo">
+            <img src="logo.jpg" alt="logo kina" />
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="registration">
+            <a href="rejestracja.html">Rejestracja</a>
+        </div>
+        <div class="login">
+            <a href="logowanie.html">Logowanie</a>
+        </div>
+    </div>
+    <div class="formRegistration">
+        <form>
+            <label for="pole_login">Wpisz login</label><br>
+            <input type="text" name="login" id="pole_login" /><br><br>
+
+            <label for="pole_email">Wpisz email</label><br>
+            <input type="email" name="email" id="pole_email" /><br><br>
+
+            <label for="pole_haslo">Wpisz hasło</label><br>
+            <input type="text" name="haslo" id="pole_haslo" onfocusout="validatePassword(this.id, this.value)"><br><br>
+
+            <label for="pole_haslo">Powtórz hasło </label><br>
+            <input type="text" disabled="true" name="haslo" id="pole_powtorz_haslo"
+                onfocusout="validateSecondPassword(this.id, this.value)" /><br><br>
+
+            <label for="pole_tel">Wpisz telefon w formacie +48XXXXXXXXX</label><br>
+            <input type="tel" name="telefon" id="pole_telefon"
+                onfocusout="validatePhone(this.id, this.value)" /><br><br>
+
+            <label for="pole_kod">Wpisz kod pocztowy w formacie XX-XXX</label><br>
+            <input type="text" name="kod" id="pole_kod" onfocusout="validateNumber(this.id, this.value)" /><br><br>
+
+            <input type="submit" disabled="true" id="Zarejestruj" value="Zarejestruj" onclick="register()"><br><br>
+
+            <div class="save">
+                <a href="projekt2.html">Anuluj</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="rejestracja.js"></script>
+
+</html>

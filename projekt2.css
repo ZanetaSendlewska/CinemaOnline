@@ -1,0 +1,64 @@
+body{
+    background-color: #BFDFED;
+}
+
+.flexbox-container{
+    display:flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+}
+
+/* Nagłówek */
+.cinema{
+    background-color: #003B73;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.advertising{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+a:link, a:visited {
+    color: #000000;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.registration{
+    background-color: #60A3D9;
+    width: 50%;
+}
+
+.login{
+    background-color: #60A3D9;
+    width: 50%;
+}
+
+.formRegistration{
+    font-weight: bold;
+}
+
